@@ -93,13 +93,13 @@ public class MainFrame extends JFrame
 
         // СОЗДАНИЕ ПОЛЕЙ ВВОДА
         JLabel labelForX = new JLabel("X:");
-        textFieldX = new JTextField("0", 10);
+        textFieldX = new JTextField("0", 50);
         textFieldX.setMaximumSize(textFieldX.getPreferredSize());
         JLabel labelForY = new JLabel("Y:");
-        textFieldY = new JTextField("0", 10);
+        textFieldY = new JTextField("0", 50);
         textFieldY.setMaximumSize(textFieldY.getPreferredSize());
         JLabel labelForZ = new JLabel("Z:");
-        textFieldZ = new JTextField("0", 10);
+        textFieldZ = new JTextField("0", 50);
         textFieldZ.setMaximumSize(textFieldZ.getPreferredSize());
 
         Box horizontalBoxVariables = Box.createHorizontalBox();
@@ -108,11 +108,11 @@ public class MainFrame extends JFrame
         horizontalBoxVariables.add(labelForX);
         horizontalBoxVariables.add(Box.createHorizontalStrut(10));
         horizontalBoxVariables.add(textFieldX);
-        horizontalBoxVariables.add(Box.createHorizontalStrut(100));
+        horizontalBoxVariables.add(Box.createHorizontalStrut(20));
         horizontalBoxVariables.add(labelForY);
         horizontalBoxVariables.add(Box.createHorizontalStrut(10));
         horizontalBoxVariables.add(textFieldY);
-        horizontalBoxVariables.add(Box.createHorizontalStrut(100));
+        horizontalBoxVariables.add(Box.createHorizontalStrut(20));
         horizontalBoxVariables.add(labelForZ);
         horizontalBoxVariables.add(Box.createHorizontalStrut(10));
         horizontalBoxVariables.add(textFieldZ);
@@ -120,7 +120,7 @@ public class MainFrame extends JFrame
 
         // СОЗДАНИЕ ПОЛЯ ВЫВОДА
         JLabel labelForResult = new JLabel("Результат:");
-        textFieldResult = new JTextField("0", 10);
+        textFieldResult = new JTextField("0", 50);
         textFieldResult.setMaximumSize(textFieldResult.getPreferredSize());
 
         Box horizontalBoxResult = Box.createHorizontalBox();
@@ -177,13 +177,13 @@ public class MainFrame extends JFrame
 
         // СОЗДАНИЕ ПОЛЯ ПАМЯТИ
         JLabel labelForMemory1 = new JLabel("Ячейка 1");
-        textFieldMemory1 = new JTextField(memory1.toString(), 10);
+        textFieldMemory1 = new JTextField(memory1.toString(), 50);
         textFieldMemory1.setMaximumSize(textFieldMemory1.getPreferredSize());
         JLabel labelForMemory2 = new JLabel("Ячейка 2");
-        textFieldMemory2 = new JTextField(memory2.toString(), 10);
+        textFieldMemory2 = new JTextField(memory2.toString(), 50);
         textFieldMemory2.setMaximumSize(textFieldMemory2.getPreferredSize());
         JLabel labelForMemory3 = new JLabel("Ячейка 3");
-        textFieldMemory3 = new JTextField(memory3.toString(), 10);
+        textFieldMemory3 = new JTextField(memory3.toString(), 50);
         textFieldMemory3.setMaximumSize(textFieldMemory3.getPreferredSize());
 
         Box horizontalBoxMemory = Box.createHorizontalBox();
@@ -191,11 +191,11 @@ public class MainFrame extends JFrame
         horizontalBoxMemory.add(labelForMemory1);
         horizontalBoxMemory.add(Box.createHorizontalStrut(10));
         horizontalBoxMemory.add(textFieldMemory1);
-        horizontalBoxMemory.add(Box.createHorizontalStrut(100));
+        horizontalBoxMemory.add(Box.createHorizontalStrut(20));
         horizontalBoxMemory.add(labelForMemory2);
         horizontalBoxMemory.add(Box.createHorizontalStrut(10));
         horizontalBoxMemory.add(textFieldMemory2);
-        horizontalBoxMemory.add(Box.createHorizontalStrut(100));
+        horizontalBoxMemory.add(Box.createHorizontalStrut(20));
         horizontalBoxMemory.add(labelForMemory3);
         horizontalBoxMemory.add(Box.createHorizontalStrut(10));
         horizontalBoxMemory.add(textFieldMemory3);
@@ -242,11 +242,11 @@ public class MainFrame extends JFrame
         });
 
         Box horizontalBoxButtons = Box.createHorizontalBox();
-        horizontalBoxButtons.add(Box.createHorizontalGlue());
+
         horizontalBoxButtons.add(buttonCalc);
-        horizontalBoxButtons.add(Box.createHorizontalStrut(30));
-        horizontalBoxButtons.add(buttonReset);
         horizontalBoxButtons.add(Box.createHorizontalGlue());
+        horizontalBoxButtons.add(buttonReset);
+
         horizontalBoxButtons.setBorder(BorderFactory.createLineBorder(Color.GREEN));
 
         // КОМПАНОВКА
